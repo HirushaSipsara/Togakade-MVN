@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCustomerController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="15.0" layoutY="100.0" prefHeight="200.0" prefWidth="571.0" styleClass="dashboard-colour2" stylesheets="@../css/table.css">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="142.0" text="Name" />
+            <TableColumn fx:id="colAddess" prefWidth="215.0" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="138.0" text="Salary" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="243.0" layoutY="328.0" onAction="#btnReloadOnAction" style="-fx-background-color: #9b59b6;" text="Reload">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#71aea7" height="71.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="608.0" />
+      <Label layoutX="156.0" layoutY="14.0" prefHeight="43.0" prefWidth="269.0" text="View Customer Form">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
